@@ -1,43 +1,66 @@
-# Jee Book Hub - Complete Online Library Management System
+# Jee Book Hub – Online Library Management System
 
-## Technologies
-HTML, CSS, JavaScript, PHP 8+, MySQL, XAMPP.
+Jee Book Hub is a dynamic Online Library Management System developed using HTML, CSS, JavaScript, PHP, and MySQL.
 
-## Features
-- User registration with hashed passwords
-- User login/logout with sessions
-- Book collection loaded from MySQL
-- Search by title, author and category
-- Borrow books
-- Prevent duplicate active borrowing
-- Prevent borrowing when no copy is available
-- Automatic available-copy update
-- My Books page
-- Return books
-- Admin dashboard
-- Add new books from admin dashboard
-- Responsive UI
+The system allows users to register, log in, browse available books, issue/borrow books, and return borrowed books. It also includes database connectivity for managing users and book records.
 
-## Installation
+## Technologies Used
 
-1. Install/open XAMPP.
-2. Start Apache and MySQL.
-3. Copy this folder into:
-   C:\xampp\htdocs\Jee_Book_Hub_Complete_System
-4. Open phpMyAdmin:
-   http://localhost/phpmyadmin/
-5. Import:
-   database/library.sql
-6. Open:
-   http://localhost/Jee_Book_Hub_Complete_System/
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+- XAMPP
+- InfinityFree Web Hosting
 
-## Admin account
+## Main Features
 
-Register a normal account first. Then open phpMyAdmin and run:
+- User Registration
+- User Login and Logout
+- Browse Available Books
+- Search/View Book Details
+- Issue/Borrow Books
+- Return Books
+- Dynamic Book Availability
+- MySQL Database Integration
+- Responsive Web Interface
 
-UPDATE users SET role='admin' WHERE email='your-email@example.com';
+## Live Website
 
-Replace the email with the account you registered.
+The project is hosted online using InfinityFree:
 
-## Important
-Do not open the PHP files by double-clicking them. Run the project through localhost/XAMPP.
+**Live Website:** https://jeebookhub.freepage.cc/
+
+## Project Repository
+
+This GitHub repository contains the complete source code of the Jee Book Hub project.
+
+## Project Structure
+
+Jee-Book-Hub/
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── app.js
+│
+├── php/
+│   ├── add_book.php
+│   ├── issue_book.php
+│   ├── login.php
+│   ├── logout.php
+│   ├── register.php
+│   └── return_book.php
+│
+├── database/
+│   └── library.sql
+│
+├── index.php
+├── books.php
+├── login.php
+├── register.php
+├── my-books.php
+├── admin.php
+└── README.md
